@@ -7,7 +7,7 @@ import "../../../styles/Layout.css";
 const Sidebar = () => {
   //GET USER STATE
   // const { user } = useSelector((state) => state.auth);
-  const user ={role: "organisation"};
+  const user ={role: "admin"};
 
   const location = useLocation();
 

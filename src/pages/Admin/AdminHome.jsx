@@ -6,42 +6,26 @@ const AdminHome = () => {
   const { user } = useSelector((state) => state.auth);
   return (
     <Layout>
-      <div className="container">
-        <div className="d-felx flex-column mt-4">
-          <h1>
-            Welcome Admin <i className="text-success">{user?.name}</i>
-          </h1>
-          <h3>Manage Blood Bank App </h3>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            explicabo animi blanditiis incidunt dicta quia, quibusdam facere
-            corporis! Dolores, reprehenderit cum sed repellat laudantium
-            architecto natus est nostrum accusamus, odio aspernatur minima
-            fugiat quam molestiae nisi. Temporibus impedit dolorem quia.
-            Distinctio modi non excepturi illo odio voluptatum quae nostrum a
-            temporibus sequi! Explicabo, quasi consequatur ad qui quos labore
-            distinctio voluptates alias nostrum ab dicta aspernatur molestias
-            adipisci quibusdam error ipsa. Totam, tenetur dolores eaque tempora
-            officiis deserunt assumenda? Rerum nemo est nihil laudantium
-            necessitatibus. Possimus, voluptatem voluptates blanditiis quas
-            aspernatur, quam, quaerat minus maiores ipsam sint perferendis
-            dolor. Dignissimos voluptatem doloribus sint in quis omnis, atque
-            neque praesentium voluptatum suscipit. Quas esse, accusantium maxime
-            obcaecati iure officiis aperiam minus alias quod cum quos qui
-            voluptatibus, numquam, ad id dolore odit! Minima laudantium sunt,
-            explicabo nesciunt quos voluptatibus qui libero eligendi praesentium
-            debitis obcaecati similique assumenda nobis labore totam dolore
-            perferendis adipisci fugiat quibusdam tempore doloremque voluptatum
-            accusantium. Accusamus, incidunt sequi. Esse sunt officia fuga,
-            officiis saepe tempora repellat suscipit aliquid cupiditate
-            perferendis, asperiores architecto molestiae rem iste eaque
-            molestias reiciendis. Laborum modi asperiores, reprehenderit
-            assumenda numquam, vitae exercitationem illum nesciunt, dolorum
-            deleniti accusamus consequatur id. Necessitatibus dolore ad fugit?
-          </p>
-        </div>
+     <div className="h-full mt-5 bg-light rounded">
+      <div className="d-flex flex-column align-items-center text-center p-4">
+        <h1 className="mb-3 text-primary">
+          Welcome Admin <i className="text-success">{user?.name}</i>
+        </h1>
+        <h3 className="mb-3 text-secondary">Manage Blood Bank App</h3>
+        <hr className="w-50" />
+        <p className="text-muted text-justify" style={{ maxWidth: "800px" }}>
+          Blood donation is a noble act that saves lives. Every drop counts, and by donating blood, you are giving someone a second chance at life. Hospitals and emergency centers rely on a steady supply of blood to treat accident victims, patients undergoing surgery, and individuals with medical conditions like anemia and cancer.
+        </p>
+        <ul className="text-muted text-left" style={{ maxWidth: "800px" }}>
+          <li>One blood donation can save up to three lives.</li>
+          <li>Blood donation helps maintain a sufficient blood supply for emergencies.</li>
+          <li>Donating blood can improve heart health and reduce harmful iron stores.</li>
+          <li>Regular donors are less likely to suffer from heart attacks and strokes.</li>
+          <li>It is a simple and safe process that takes about 10-15 minutes.</li>
+          <li>Blood cannot be manufactured; voluntary donation is the only source.</li>
+        </ul>
       </div>
+    </div>
     </Layout>
   );
 };
